@@ -1,0 +1,160 @@
+{
+	"form": {
+		"name": "form1",
+		"type": "dynamic",
+		"elementsCount": 9,
+		"elements": [{
+			"element1": {
+				"id": 1,
+				"name": "CreatedBy",
+				"type": "text",
+				"values": [
+					"null"
+				],
+				"hasParent": false,
+				"hasChild": false,
+				"childDetails": [{
+					"child1": {
+
+					}
+				}]
+			},
+			"element2": {
+				"id": 2,
+				"name": "Description",
+				"type": "text",
+				"values": [
+					"null"
+				],
+				"hasParent": false,
+				"hasChild": false,
+				"childDetails": [{
+					"child1": {
+
+					}
+				}]
+			},
+			"element3": {
+				"id": 3,
+				"name": "Severity",
+				"type": "number",
+				"values": [
+					"1",
+					"2",
+					"3",
+					"4",
+					"5"
+				],
+				"hasParent": false,
+				"hasChild": false,
+				"childDetails": [{
+					"child1": {
+
+					}
+				}]
+			},
+			"element4": {
+				"id": 4,
+				"name": "Status",
+				"type": "Enum",
+				"values": [
+					" ",
+					"CANCELLED",
+					"COMPLETED"
+				],
+				"hasParent": false,
+				"hasChild": true,
+				"childDetails": [{
+					"child1": {
+						"elementId": 5,
+						"elementName": "cancelledReason",
+						"elementValueType": "Enum",
+						"elementTriggerValue": "CANCELLED"
+					},
+					"child2": {
+						"elementId": 7,
+						"elementName": "comments",
+						"elementValueType": "text",
+						"elementTriggerValue": "COMPLETED"
+					}
+				}]
+			},
+			"element5": {
+				"id": 5,
+				"name": "cancelledReason",
+				"type": "Enum",
+				"values": [
+					" ",
+					"ENDUSER",
+					"OTHERS"
+				],
+				"hasParent": true,
+				"hasChild": true,
+				"childDetails": [{
+					"child1": {
+						"elementId": 6,
+						"elementName": "cancelledOtherDescription",
+						"elementValueType": "text",
+						"elementTriggerValue": "OTHERS"
+					}
+				}]
+			},
+			"element6": {
+				"id": 6,
+				"name": "cancelledOtherDescription",
+				"type": "text",
+				"values": [
+					"null"
+				],
+				"hasParent": true,
+				"hasChild": false,
+				"childDetails": [{
+					"child1": {}
+				}]
+			},
+			"element7": {
+				"id": 7,
+				"name": "comments",
+				"type": "text",
+				"values": [
+					"empty"
+				],
+				"hasParent": true,
+				"hasChild": false,
+				"childDetails": [{
+					"child1": {}
+				}]
+			},
+			"element8": {
+				"id": 8,
+				"name": "submit",
+				"type": "button",
+				"values": [
+					"null"
+				],
+				"hasParent": false,
+				"hasChild": false,
+				"childDetails": [{
+					"child1": {
+
+					}
+				}]
+			},
+			"element9": {
+				"id": 9,
+				"name": "clear",
+				"type": "button",
+				"values": [
+					"null"
+				],
+				"hasParent": false,
+				"hasChild": false,
+				"childDetails": [{
+					"child1": {
+
+					}
+				}]
+			}
+		}]
+	}
+}
